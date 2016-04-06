@@ -1,10 +1,11 @@
 var express = require('express');
+var path = require('path');
 
 var app = express();
 var portDecision = process.env.PORT || 3000;
 
 app.get('/', function(request, response){
-  response.send('Hello this is what my voice sounds like.. oh wait no it isn\'t');
+  response.send(Date());
 })
 
 
